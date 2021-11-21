@@ -8,10 +8,10 @@ import com.yogesh.springbootproject.entity.DepartmentEntity;
 @Repository
 public interface DepartmentRepository extends JpaRepository<DepartmentEntity, Long>{
 
-	//defining custom methods
-	
+	//defining custom methods - for JPA Repository
+
 	DepartmentEntity findByDepartmentName(String departmentName);
-	
+
 	DepartmentEntity findByDepartmentNameIgnoreCase(String departmentName);
-	
+
 }
